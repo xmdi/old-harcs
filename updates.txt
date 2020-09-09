@@ -1,0 +1,157 @@
+v0.9e (Jan-14-2019)
+ -fixed more algsearch bugs (CP and EP)
+ -added quarter moves to custom movegroups - put a 1 or 3 after the desired move
+
+
+v0.9d (Dec-06-2018)
+ -fixed algsearch EO bugs (centers still must be fixed)
+ -added half-moves to custom movegroups - put a 2 after the desired move
+
+
+v0.9c (Sep-27-2017)
+ -"hacks *" command to branch to depth * for efficient solutions
+ -"algsearch *" command to generate * algs for each case between steps
+ -added setting to select browser visualization (ACN or my XMDI)
+ -permit "load custom" instead of "load custom.txt"
+ -custom solved states for "analyze" and "hacks" 
+ -fixed several bugs
+ -added public domain license
+
+ 
+v0.9b (Jun-12-2017)
+ -define cool settings in "settings.txt"
+ -fixed bug with move cancellations
+ -added another help page
+ -"random" command sets a random cubestate
+ -time breakdown for load/analyze
+ -"load *" command replaces "custom", give it a .txt file
+ -switched to uint64_t for some additional portability
+ -simplified and pushed error notes to the end of analysis
+ -fixed a bug with set states and analysis
+ -increased sb prune depth in roux
+ -"export" command to save raw analysis solutions
+ -improved performance of 2gen testing
+ -"histogram *" command to plot movecount histogram of analysis step
+ 
+ 
+v0.9a (May-30-2017)
+ -brought back 32-bit support for the many nice people
+ 
+
+v0.9 (May-28-2017)
+ -upgraded method analysis: "analyze *"
+ -adjusted table depths in compiled methods
+ -removed 3000 lines of old code
+ -command line arguments (exe followed by usual commands, on one line)
+ -colored output
+ -switched to 64-bit
+ -fixed issues with ZBLL alg list
+ -fixed many bugs
+ 
+ 
+v0.8a (May-22-2017)
+ -"analyze *" to calculate stepwise method statistics
+
+ 
+v0.8 (Apr-14-2017)
+ -massive code overhaul for significant performance improvement
+ -custom solved states for user-defined methods (see readme)
+ -added direct hexadecimal cubestate prescription
+ -added democratically-elected icon
+ -many bugs likely introduced
+ 
+ 
+v0.7b (???-??-2017)
+ -top secret version only for elite cubers
+ 
+ 
+v0.7a (Jan-25-2017)
+ -fixed everything I didn't notice I broke in v0.7
+
+ 
+v0.7 (Jan-22-2017)
+ -custom methods support custom movegroups ("movegroup <RUL>")
+ -support for ALL possible moves (Singmaster Notation) and rotations
+ -custom methods support solving to AUF ("Udisplacement")
+ -custom methods support custom algorithm sets ("algset CMLL.txt")
+ -custom methods support solving CP ("2genreduction")
+ -fixed bugs in cancellations and cubestate reversions
+ -include substep names in output for clarity
+ 
+ 
+v0.6 (Jan-17-2017)
+ -added support for custom user-defined methods (up to 8 steps)
+ -see the custom_methods_readme.txt for details
+
+
+v0.5 (Jan-04-2017)
+ -fixed bug in cancellations
+ -wide U moves added (u/u2/u')
+ -removed move penalty for rotations
+ -added Simon Swanson's full ZBLL alg-set for ZZ/Petrus
+ -"all" command to fully solve the cube in a single orientation (for zz, this does lb->rb)
+ -you can now apply sequences in this order:
+ 	Petrus:	2x2x2->3x2x2->eo->f2l->zbll
+				   3x2x2->eo->f2l->zbll
+	CFOP:   cross->xcross (first pair at FR)
+		           xcross
+	Roux:	fs->fb->sb->cmll->lse
+			    fb->sb->cmll->lse
+	ZZ:	eoline->   lb  ->rb->zbll
+		eoline->   rb  ->lb->zbll
+		        eo3x2x2->rb->zbll
+				
+
+v0.4 (Dec-23-2016)
+ -fixed bug with movecounts printing in base16 (LOL)
+ -"view" command to display solution on alg.cubing.net
+ -ability to apply moves between blocks (your own algs, etc.)
+ -additional hex value to describe centers
+ -wide L moves added (l/l2/l')
+ -added optimal Roux CMLL and LSE. You can edit the algs in CMLL.txt.
+ 	Roux:	fs->fb->sb->cmll->lse
+			    fb->sb->cmll->lse
+ 
+ 
+v0.3 (Dec-21-2016)
+ -added video
+ -fixed bug with [RUFB] movegroup
+ -all optimal solutions now generable (at small RAM expense)
+ -trivial congruent solutions removed (we match cubeexplorer)
+ -you can now apply sequences in this order:
+	Petrus:	2x2x2->3x2x2->eo->f2l
+				   3x2x2->eo->f2l
+	CFOP:   cross->xcross (first pair at FR)
+		           xcross
+	Roux:	fs->fb->sb
+			    fb->sb
+	ZZ:	eoline->   lb  ->rb
+		eoline->   rb  ->lb
+		        eo3x2x2->rb
+
+
+v0.2 (Dec-16-2016)
+ -fixed bug with z' rotations
+ -made roux fb [U,D,R,L,F,B,M,r] optimal & ignore centers
+ -adjusted prune depth for steps, based on upper bounds, faster
+ -way to apply solutions (typing number next to it) and continue
+ -keeps track of applied move sequences (print command)
+ -save applied sequences to text file (don't need to copy manually)
+ -added second steps, see below
+ -you can now apply sequences in this order:
+	Petrus:	2x2x2->3x2x2->eo->f2l
+		           3x2x2->eo->f2l
+	CFOP:   cross->xcross (first pair at FR)
+		       xcross
+	Roux:	fs->fb->sb
+		        fb->sb
+	ZZ:	eoline->   lb  ->rb
+		        eo3x2x2->rb
+
+		
+v0.1 (Dec-14-2016)
+ -basic color neutral first steps including:
+   -cfop: cross, xcross
+   -petrus: 2x2x2, 3x2x2
+   -roux: fb+centers
+   -zz: eoline, eo3x2x2

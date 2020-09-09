@@ -1,0 +1,14 @@
+default orientations (space-separated):
+UF
+default number of results:
+3
+default command terminator:
+#
+default HARCS color (WIN-COLORS 0-15):
+12
+default input color (WIN-COLORS 0-15):
+15
+default output color (WIN-COLORS 0-15):
+14
+visualization (ACN/XMDI):
+ACN

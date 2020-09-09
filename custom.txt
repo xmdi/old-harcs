@@ -1,0 +1,44 @@
+Here is an example custom.txt file for the SSC method.
+Any line that does not begin with a command is ignored.
+
+step eoedge
+movegroup 1
+prunedepth 5
+searchdepth 5
+epmask 0x0000ff0f0000
+eomask 0xffffffffffff
+cpmask 0x00000000
+comask 0x00000000
+cnmask 0xfff
+
+step co
+movegroup 4
+prunedepth 7
+searchdepth 7
+epmask 0x0000ffff0000
+eomask 0xffffffffffff
+cpmask 0x00000000
+comask 0xffffffff
+cnmask 0xfff
+
+step cp
+movegroup 4
+prunedepth 8
+searchdepth 8
+epmask 0x0000ffff0000
+eomask 0xffffffffffff
+cpmask 0xffffffff
+comask 0xffffffff
+cnmask 0xfff
+
+step l8e
+movegroup 9
+prunedepth 7
+searchdepth 8
+epmask 0xffffffffffff
+eomask 0xffffffffffff
+cpmask 0xffffffff
+comask 0xffffffff
+cnmask 0xfff
+
+all eoedge co cp l8e

@@ -1,0 +1,42 @@
+R' U L' U2 l F' R' F2 R2 // CMLL O1
+R2 D r' U r D' R2 U' F' U' F // CMLL O2
+R U2 R' U' R U' R' // CMLL AS1
+L F2 L2 U2 L F' L' U2 L2 F2 L' // CMLL AS2
+F' r U r' U2 L' U2 L // CMLL AS3
+R U2 R' U2 R' F R F' // CMLL AS4
+R' U L U' R U L' // CMLL AS5
+R U2 R' F R' F' R U' R U' R' // CMLL AS6
+R U R' U R U2 R' // CMLL S1
+R' F2 R U2 r U' r' F // CMLL S2
+F R' F' R U2 R U2 R' // CMLL S3
+l U' R' U2 R' D R U2 R' D' R2 U l' // CMLL S4
+R U' L' U R' U' L // CMLL S5
+R U R' U R' F R F' R U2 R' // CMLL S6
+R U R' U R U2 R' U R' U' R U' R' U2 R // CMLL L1
+R' U2 R' D' R U2 R' D R2 // CMLL L2
+R U2 R D R' U2 R D' R2 // CMLL L3
+F R' F' R U R U' R' // CMLL L4
+F' r U R' U' r' F R // CMLL L5
+R U2 R2 F R F' R U2 R' // CMLL L6
+R2 F U' F U F2 R2 U' R' F R // CMLL U1
+R' U L U' R U2 F U' F' L' // CMLL U2
+R2 D R' U2 R D' R' U2 R' // CMLL U3
+R' F U' R F R' U R F' // CMLL U4
+R2 D' R U2 R' D R U2 R // CMLL U5
+F R U R' U' F' // CMLL U6
+F R' F R2 U' R' U' R U R' F2 // CMLL T1
+R' U r U2 R2 F R F' r // CMLL T2
+r' F' r U r U' r' F // CMLL T3
+F R' U' R F' R' U F' R // CMLL T4
+R U R' U' R' F R F' // CMLL T5
+R' U R2 D r' U2 r D' R2 U' R // CMLL T6
+R U2 R2 U' R2 U' R2 U2 R // CMLL PI1
+F U R U' R2 F' R U2 R U2 R' // CMLL PI2
+R' F R U F U' R U R' U' F' // CMLL PI3
+R U2 R' U2 R' F R2 U R' U' F' // CMLL PI4
+R' F R F' r U' R' U' R U' r' // CMLL PI5
+R' U' R U' R' U F' U F R // CMLL PI6
+R U2 R' U' R U R' U' R U' R' // CMLL H1
+R U R' U R U r' F R' F' r // CMLL H2
+R' F2 D R2 U R2 D' F2 R // CMLL H3
+F R U R' U' R U R' U' R U R' U' F' // CMLL H4

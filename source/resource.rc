@@ -1,0 +1,5 @@
+#ifndef _resource_rc
+#define _resource_rc
+MAINICON ICON "letter-h32.ico"
+#endif
+
